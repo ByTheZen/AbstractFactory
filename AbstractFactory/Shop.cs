@@ -15,7 +15,7 @@ namespace AbstractFactory
               
         public void GetInformation()
         {
-            Console.WriteLine(string.Format("The {0} sells {1} in their shop", _shopOwner.GetType().Name, _goods.GetType().Name));
+            _shopOwner.Sells(_goods);
         }
     }
 }
